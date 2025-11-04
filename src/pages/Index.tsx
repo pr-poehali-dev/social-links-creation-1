@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const handleCall = () => {
-    window.location.href = "tel:+73842773368";
+    window.location.href = "tel:+79234651336";
   };
 
   const links = [
