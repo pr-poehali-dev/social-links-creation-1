@@ -12,13 +12,13 @@ const Index = () => {
       name: "ВКонтакте",
       icon: "MessageCircle",
       url: "https://vk.com/towtruck42",
-      color: "bg-[#0077FF]",
+      color: "bg-orange-500",
     },
     {
       name: "Avito",
       icon: "ShoppingBag",
       url: "https://www.avito.ru/kemerovo/predlozheniya_uslug/evakuator_247_kruglosutochno_gorodmezhgorod_7736033381",
-      color: "bg-[#00AAFF]",
+      color: "bg-orange-500",
     },
   ];
 
