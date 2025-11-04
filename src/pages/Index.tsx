@@ -26,17 +26,13 @@ const Index = () => {
     <div className="min-h-screen bg-white flex items-center justify-center p-4">
       <div className="w-full max-w-md space-y-8 animate-fade-in">
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center justify-center w-24 h-24 bg-primary rounded-full mb-4 animate-scale-in">
-            <Icon name="Truck" size={48} className="text-white" />
+          <div className="inline-flex items-center justify-center mb-4 animate-scale-in">
+            <img 
+              src="https://cdn.poehali.dev/files/b1e27edf-91fa-4f0c-9d39-66f7ee4d00d1.png" 
+              alt="Эвакуатор 24/7" 
+              className="w-64 h-64 object-contain"
+            />
           </div>
-          
-          <h1 className="text-4xl font-bold text-primary tracking-tight">
-            Эвакуатор 24/7
-          </h1>
-          
-          <p className="text-lg text-muted-foreground font-medium">
-            Кемерово • Город / Межгород
-          </p>
         </div>
 
         <Button
