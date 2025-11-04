@@ -23,18 +23,20 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-4">
-      <div className="w-full max-w-md space-y-8 animate-fade-in">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-orange-600/10 via-transparent to-transparent"></div>
+      <div className="w-full max-w-md space-y-8 animate-fade-in relative z-10">
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center justify-center w-24 h-24 bg-primary rounded-full mb-4 animate-scale-in">
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-orange-500 rounded-full mb-4 animate-scale-in shadow-xl shadow-orange-500/30">
             <Icon name="Truck" size={48} className="text-white" />
           </div>
           
-          <h1 className="text-4xl font-bold text-primary tracking-tight">
+          <h1 className="text-4xl font-bold text-white tracking-tight">
             Эвакуатор 24/7
           </h1>
           
-          <p className="text-lg text-muted-foreground font-medium">
+          <p className="text-lg text-slate-300 font-medium">
             Кемерово • Город / Межгород
           </p>
         </div>
@@ -58,7 +60,7 @@ const Index = () => {
               className="block animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Card className="p-5 hover:shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer border-2">
+              <Card className="p-5 hover:shadow-xl transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer border-2 bg-white/95 backdrop-blur-sm">
                 <div className="flex items-center space-x-4">
                   <div className={`w-12 h-12 ${link.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
                     <Icon name={link.icon as any} size={24} className="text-white" />
@@ -74,7 +76,7 @@ const Index = () => {
         </div>
 
         <div className="text-center pt-6">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-slate-400">
             Круглосуточно • Быстро • Надежно
           </p>
         </div>
